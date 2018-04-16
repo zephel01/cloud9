@@ -30,3 +30,5 @@ pip install simplejson
 pip install pybitflyer
 pip install requests
 pip install datetime
+
+exec bash
