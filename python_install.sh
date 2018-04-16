@@ -18,14 +18,14 @@ sed -i -e 's/alias python/#alias python/g' ~/.bashrc
 
 cat ~/cloud9/bashrc_add >> ~/.bashrc
 
-source ~/.bash_profile
+cd ~ && source ./.bashrc
 
 pyenv install 3.6.5
 pyenv global 3.6.5
 
 pip install --upgrade pip
 
-pip install ccxt
+pip install ccxt==1.12.174
 pip install simplejson
 pip install pybitflyer
 pip install requests
