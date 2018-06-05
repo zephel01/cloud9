@@ -25,11 +25,14 @@ pyenv global 3.6.5
 
 pip install --upgrade pip
 
-pip install ccxt==1.12.174
-pip install simplejson
 pip install pybitflyer
-pip install requests
-pip install datetime
-pip install pandas
+pip install pandas --no-build-isolation
+pip install colorconsole
+pip install websocket-client
+pip install hjson
+pip install quandl
+pip install tornado
+pip install pygame
 
 exec bash
+
