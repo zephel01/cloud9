@@ -28,7 +28,7 @@ pip install --upgrade pip
 pip install pybitflyer
 pip install pandas --no-build-isolation
 pip install colorconsole
-pip install websocket-client
+pip install websocket-client==0.47
 pip install hjson
 pip install quandl
 pip install tornado
