@@ -5,3 +5,5 @@ sudo cp ~/cloud9/sysctl.conf /etc/sysctl.conf
 
 sudo echo "* soft nofile 65536" >> /etc/security/limits.conf
 sudo echo "* hard nofile 65536" >> /etc/security/limits.conf
+
+sudo /sbin/sysctl -p
