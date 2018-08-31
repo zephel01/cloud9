@@ -9,3 +9,4 @@ sudo cp /tmp/sysctl.conf /etc/sysctl.conf
 sudo bash -c "cat /tmp/limits_add >> /etc/security/limits.conf"
 
 sudo /sbin/sysctl -p
+ulimit -a
