@@ -31,5 +31,6 @@ pip install pybitflyer
 pip install requests
 pip install datetime
 pip install pandas
+pip install websocket-client==0.47
 
 exec bash
