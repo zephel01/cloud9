@@ -31,6 +31,7 @@ pip install pybitflyer
 pip install requests
 pip install datetime
 pip install pandas
+pip install pytz
 pip install websocket-client==0.47
 pip install matplotlib
 pip install discord

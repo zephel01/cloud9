@@ -1,5 +1,6 @@
 #!/bin/bash
 
+## aws ec2 & cloud9 rbenv install
 sudo yum -y install gcc-c++ openssl-devel git readline-devel
 
 mkdir ~/.rbenv
