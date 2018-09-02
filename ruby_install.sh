@@ -1,0 +1,25 @@
+#!/bin/bash
+
+sudo yum -y install gcc-c++ openssl-devel git readline-devel
+
+mkdir ~/.rbenv
+git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+
+mkdir ~/.rbenv/plugins ~/.rbenv/plugins/ruby-build
+git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+
+cd ~/.rbenv/plugins/ruby-build
+sudo ./install.sh
+
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
+echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
+
+source ~/.bash_profile
+rbenv install 2.4.5
+
+rbenv rehash
+rbenv global 2.4.5
+
+rbenv exec gem install bundler
+rbenv rehash
+
