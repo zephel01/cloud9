@@ -32,5 +32,10 @@ pip install requests
 pip install datetime
 pip install pandas
 pip install websocket-client==0.47
+pip install matplotlib
+pip install discord
+pip install pillow
+pip install bitmex
+pip install simplejson
 
 exec bash
