@@ -16,10 +16,10 @@ echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
 echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
 
 source ~/.bash_profile
-rbenv install 2.4.5
+rbenv install 2.5.1
 
 rbenv rehash
-rbenv global 2.4.5
+rbenv global 2.5.1
 
 rbenv exec gem install bundler
 rbenv rehash
