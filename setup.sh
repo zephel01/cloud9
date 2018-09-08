@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo yum -y install htop
+
 sudo cp -p /etc/sysctl.conf /etc/sysctl.conf.org
 
 cp ~/cloud9/sysctl.conf /tmp
