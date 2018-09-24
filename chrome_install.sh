@@ -12,4 +12,4 @@ unzip chromedriver_linux64.zip
 
 chmod +x chromedriver
 
-mv chromedriver /usr/local/bin
+sudo mv chromedriver /usr/local/bin
