@@ -6,7 +6,7 @@ curl https://intoli.com/install-google-chrome.sh | bash
 
 sudo yum -y install ipa-gothic-fonts
 
-wget https://chromedriver.storage.googleapis.com/2.41/chromedriver_linux64.zip
+wget https://chromedriver.storage.googleapis.com/2.42/chromedriver_linux64.zip
 
 unzip chromedriver_linux64.zip 
 
