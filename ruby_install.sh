@@ -12,7 +12,7 @@ git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 cd ~/.rbenv/plugins/ruby-build
 sudo ./install.sh
 
-cat << 'EOF' >> ~/.bash_profile
+cat << 'EOF' >> ~/.bashrc
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 EOF
