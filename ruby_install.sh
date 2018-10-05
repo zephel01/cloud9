@@ -12,8 +12,10 @@ git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 cd ~/.rbenv/plugins/ruby-build
 sudo ./install.sh
 
-echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
-echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
+cat << 'EOF' >> ~/.bash_profile
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+EOF
 
 source ~/.bash_profile
 rbenv install 2.5.1

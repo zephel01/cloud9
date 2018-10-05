@@ -16,7 +16,14 @@ sudo chown -R ec2-user:ec2-user /usr/bin/.pyenv
 cd ~
 sed -i -e 's/alias python/#alias python/g' ~/.bashrc
 
-cat ~/cloud9/bashrc_add >> ~/.bashrc
+cat << 'EOF' >> ~/.bashrc
+export PYENV_ROOT="/usr/bin/.pyenv"
+if [ -d "${PYENV_ROOT}" ]; then
+export PATH=${PYENV_ROOT}/bin:$PATH
+eval "$(pyenv init -)"
+fi
+EOF
+
 
 source ~/.bashrc
 
