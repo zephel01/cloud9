@@ -5,19 +5,17 @@ sudo yum install -y gcc gcc-c++ make git openssl-devel bzip2-devel zlib-devel re
 
 # pyenv install
 
-sudo /usr/bin/git clone https://github.com/yyuu/pyenv.git /usr/bin/.pyenv
+/usr/bin/git clone https://github.com/yyuu/pyenv.git $HOME/.pyenv
 
-cd /usr/bin/.pyenv
-sudo mkdir shims
-sudo mkdir versions
-
-sudo chown -R ec2-user:ec2-user /usr/bin/.pyenv
+cd $HOME/.pyenv
+mkdir shims
+mkdir versions
 
 cd ~
 sed -i -e 's/alias python/#alias python/g' ~/.bashrc
 
 cat << 'EOF' >> ~/.bashrc
-export PYENV_ROOT="/usr/bin/.pyenv"
+export PYENV_ROOT="$HOME/.pyenv"
 if [ -d "${PYENV_ROOT}" ]; then
 export PATH=${PYENV_ROOT}/bin:$PATH
 eval "$(pyenv init -)"
