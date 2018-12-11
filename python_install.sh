@@ -30,17 +30,7 @@ pyenv global 3.6.5
 
 pip install --upgrade pip
 
-pip install ccxt
-pip install simplejson
-pip install pybitflyer
-pip install requests
-pip install datetime
-pip install pandas
-pip install pytz
-pip install websocket-client==0.47
-pip install matplotlib
-pip install discord
-pip install pillow
-pip install bitmex
+## pip install
+pip install -r ./requirements.txt
 
 exec bash
