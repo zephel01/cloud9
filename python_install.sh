@@ -31,6 +31,6 @@ pyenv global 3.6.5
 pip install --upgrade pip
 
 ## pip install
-pip install -r ./requirements.txt
+pip install -r ~/cloud9/requirements.txt
 
 exec bash
