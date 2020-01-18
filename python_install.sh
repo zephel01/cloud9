@@ -3,9 +3,12 @@
 # 開発環境インストール
 sudo yum install -y gcc gcc-c++ make git openssl-devel bzip2-devel zlib-devel readline-devel sqlite-devel
 
+chsh -s /bin/bash
+
 # pyenv install
 
-/usr/bin/git clone https://github.com/yyuu/pyenv.git $HOME/.pyenv
+git clone git://github.com/yyuu/pyenv.git ~/.pyenv
+git clone git://github.com/yyuu/pyenv-update.git ~/.pyenv/plugins/pyenv-update
 
 cd $HOME/.pyenv
 mkdir shims
@@ -22,15 +25,15 @@ eval "$(pyenv init -)"
 fi
 EOF
 
-
 source ~/.bashrc
 
 pyenv install 3.6.5
 pyenv global 3.6.5
+
+pyenv rehash
 
 pip install --upgrade pip
 
 ## pip install
 pip install -r ~/cloud9/requirements.txt
 
-exec bash
