@@ -5,7 +5,7 @@ sudo yum install -y openssl-devel bzip2-devel zlib-devel readline-devel sqlite-d
 sudo yum groupinstall -y development
 
 #amazonlinux2 epel
-sudo amazon-linux-extras install epel
+sudo amazon-linux-extras install -y epel
 #centos epel
 sudo yum -y install epel-release
 
