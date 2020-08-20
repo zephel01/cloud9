@@ -39,6 +39,8 @@ source ~/.bashrc
 pyenv install 3.6.10
 pyenv global 3.6.10
 
+pyenv rehash
+
 pip install --upgrade pip
 pip install certbot-dns-cloudflare
 
