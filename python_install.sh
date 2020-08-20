@@ -1,7 +1,16 @@
 #!/bin/bash
 
 # 開発環境インストール
-sudo yum install -y gcc gcc-c++ make git openssl-devel bzip2-devel zlib-devel readline-devel sqlite-devel
+sudo yum install -y openssl-devel bzip2-devel zlib-devel readline-devel sqlite-devel glibc-static
+sudo yum groupinstall -y development
+
+#amazonlinux2 epel
+sudo amazon-linux-extras install epel
+#centos epel
+sudo yum -y install epel-release
+
+#nodejs
+sudo yum -y install nodejs npm --enablerepo=epel
 
 chsh -s /bin/bash
 
