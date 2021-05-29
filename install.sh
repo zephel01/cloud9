@@ -3,7 +3,6 @@
 # 開発環境インストール
 sudo yum install -y openssl-devel bzip2-devel zlib-devel readline-devel sqlite-devel glibc-static
 sudo yum install -y gcc-c++ openssl-devel git readline-devel
-sudo yum groupinstall -y development
 
 #amazonlinux2 epel
 sudo amazon-linux-extras install epel
