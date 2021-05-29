@@ -34,6 +34,7 @@ anyenv install pyenv
 
 ## export pyenv
 cat << 'EOF' >> ~/.bash_profile
+# export pyenv
 export PYENV_ROOT="$HOME/.anyenv/envs/pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
@@ -59,6 +60,7 @@ anyenv install rbenv
 
 ## export rbenv
 cat << 'EOF' >> ~/.bashrc
+# export rbenv
 export RBENV_ROOT="$HOME/.anyenv/envs/rbenv"
 export PATH="$RBENV_ROOT/bin:$PATH"
 eval "$(rbenv init -)"
